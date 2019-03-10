@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:descendantFocusability="blocksDescendants"  >
+
+    <!-- listView条目的布局 -->
+    <!-- 头像 -->
+
+    <ImageView
+        android:id="@+id/ivProfilePhoto"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <!-- 昵称 -->
+
+        <TextView
+            android:id="@+id/tvNick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:text="昵称"
+            android:textColor="@color/darkgray"
+            android:textSize="20sp" />
+
+        <!-- 签名 -->
+
+        <TextView
+            android:id="@+id/tvSignature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:text="个性签名"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/btnDelFriend"
+        android:text="删除"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

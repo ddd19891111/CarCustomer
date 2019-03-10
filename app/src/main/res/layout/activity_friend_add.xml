@@ -1,0 +1,199 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ContactActivity"
+    android:background="@color/wheat">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="99px"
+        android:text="添加好友"
+        android:layout_alignParentTop="true"
+        android:textSize="20sp"
+        android:height="35sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="@color/colorPrimary"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="99px"
+        android:background="@color/gray1dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="101px"
+        android:layout_marginBottom="101px"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="140px"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="0px"
+                android:layout_height="120px"
+                android:layout_marginTop="20px"
+                android:hint="请输入好友账号"
+                android:layout_weight="3"/>
+            <Button
+                android:id="@+id/bt_search"
+                android:layout_width="0px"
+                android:layout_height="100px"
+                android:layout_weight="1"
+                android:layout_margin="10px"
+                android:text="查询"
+                android:background="@color/colorPrimary"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lv_add_friend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:orientation="horizontal"
+            android:descendantFocusability="blocksDescendants"  >
+
+            <!-- listView条目的布局 -->
+            <!-- 头像 -->
+
+            <ImageView
+                android:id="@+id/ivProfilePhoto"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/p1" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <!-- 昵称 -->
+
+                <TextView
+                    android:id="@+id/tvNick"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:text="昵称"
+                    android:textColor="@color/darkgray"
+                    android:textSize="20sp" />
+
+                <!-- 签名 -->
+
+                <TextView
+                    android:id="@+id/tvSignature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:text="个性签名"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+            <Button
+                android:layout_gravity="center"
+                android:id="@+id/btnAddFriend"
+                android:text="添加好友"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="99px"
+        android:background="@color/gray1dp" />
+    <!-- Tabbar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="99px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/titletv">
+        <RelativeLayout
+            android:id="@+id/tabbar_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="5dip"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@mipmap/home"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="好友列表"
+                    android:textColor="#7597B3"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/tabbar_dig"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="5dip"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@mipmap/star_p"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="添加好友"
+                    android:textColor="#7597B3"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/tabbar_my"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="5dip"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@mipmap/user"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="个人中心"
+                    android:textColor="#7597B3"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

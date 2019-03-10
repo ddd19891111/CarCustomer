@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.RegisterActivity"
+    android:background="@color/colorPrimary">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="99px"
+        android:text="注册"
+        android:layout_alignParentTop="true"
+        android:textSize="20sp"
+        android:height="35sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@color/colorPrimary"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="99px"
+        android:background="@color/gray1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100px"
+        android:orientation="vertical"
+        android:background="@color/snow">
+        <ImageView
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_gravity="center"
+            android:background="@mipmap/avtor"
+            android:layout_marginTop="10px"
+            android:layout_marginBottom="10px"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray1dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="500px"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:hint="    请输入账号"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gray1dp" />
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:hint="    请输入密码"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gray1dp" />
+            <EditText
+                android:id="@+id/etVerifyPassword"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:hint="    请再次输入密码"/>
+            <EditText
+                android:id="@+id/etNickname"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:hint="    请输入昵称"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gray1dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gray1dp" />
+            <EditText
+                android:id="@+id/etSignature"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:hint="    请输入个性签名"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray1dp" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:layout_marginTop="100px"
+            android:text="注册"
+            android:gravity="center"
+            android:textColor="@color/snow"
+            android:textSize="20sp"
+            android:background="@drawable/button_selector" />
+    </LinearLayout>
+</RelativeLayout>

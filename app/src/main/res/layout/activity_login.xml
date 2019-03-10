@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LoginActivity"
+    android:background="@color/colorPrimary">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="99px"
+        android:text="登录"
+        android:layout_alignParentTop="true"
+        android:textSize="20sp"
+        android:height="35sp"
+
+        android:textStyle="bold"
+        android:gravity="center"
+
+        android:background="@color/colorPrimary"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="99px"
+        android:background="@color/gray1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100px"
+        android:orientation="vertical"
+        android:background="@color/snow">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10px"
+            android:layout_marginTop="1px"
+            android:layout_marginBottom="10px"
+            android:background="@color/snow"
+            android:gravity="center"
+            android:textSize="100sp"
+            android:orientation="vertical">
+
+        </TextView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray1dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/etServerIp"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:text="192.168.0.100"
+                android:hint="    请输入服务器Ip"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gray1dp" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnConnect"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:layout_marginTop="10px"
+            android:layout_marginBottom="10px"
+            android:text="连接服务器"
+            android:gravity="center"
+            android:textColor="@color/snow"
+            android:textSize="20sp"
+            android:background="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200px"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:text="1"
+                android:hint="    请输入账号"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gray1dp" />
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20px"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:text="1"
+                android:hint="    请输入密码"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray1dp" />
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:text="登录"
+            android:gravity="center"
+            android:textColor="@color/snow"
+            android:textSize="20sp"
+            android:background="@color/colorPrimary" />
+        <Button
+            android:id="@+id/btnNewUser"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:layout_marginTop="10px"
+            android:text="注册"
+            android:gravity="center"
+            android:textColor="@color/snow"
+            android:textSize="20sp"
+            android:background="@color/colorPrimary" />
+
+
+    </LinearLayout>
+</RelativeLayout>

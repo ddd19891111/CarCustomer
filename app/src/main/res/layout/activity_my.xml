@@ -1,0 +1,254 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ContactActivity"
+    android:background="@color/wheat">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="99px"
+        android:text="个人中心"
+        android:layout_alignParentTop="true"
+        android:textSize="20sp"
+        android:height="35sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="@color/colorPrimary"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="99px"
+        android:background="@color/gray1dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="101px"
+        android:layout_marginBottom="101px"
+        android:background="@color/white">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="100px"
+            android:background="@color/snow">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/white">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/gray1dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200px"
+                        android:layout_margin="30px"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="100px"
+                            android:layout_height="100px"
+                            android:layout_marginTop="40px"
+                            android:layout_marginLeft="20px"
+                            android:background="@mipmap/tou"/>
+                        <TextView
+                            android:id="@+id/tv_nickname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="200px"
+                            android:layout_marginTop="70px"
+                            android:text=" 用户名"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="40px"
+                            android:text=" "
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_marginRight="50px"
+                            android:textColor="@color/snow"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginBottom="40px"
+                            android:text=" "
+                            android:layout_marginRight="50px"
+                            android:textColor="@color/snow"/>
+
+
+
+
+
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginTop="20px"
+                        android:background="@color/gray1dp" />
+                    <TextView
+                        android:id="@+id/tvChangePassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="修改密码"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="50px"
+                        android:gravity="center_vertical"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/gray1dp" />
+                    <!--<TextView
+                        android:id="@+id/tv_user_zhifubao"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="绑定支付宝"
+                        android:gravity="center_vertical"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/gray1dp" />
+                    <TextView
+                        android:id="@+id/tv_user_feedback"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="问题反馈"
+                        android:gravity="center_vertical"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/gray1dp" />
+                    <TextView
+                        android:id="@+id/tv_user_update"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="检查更新"
+                        android:gravity="center_vertical"/>-->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/gray1dp" />
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/gray1dp" />
+                <Button
+                    android:id="@+id/logout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="40px"
+                    android:text="退出登录"
+                    android:textColor="@color/snow"
+                    android:textSize="20sp"
+                    android:background="@color/colorPrimary" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/gray1dp" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="99px"
+        android:background="@color/gray1dp" />
+    <!-- Tabbar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="99px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/titletv">
+        <RelativeLayout
+            android:id="@+id/tabbar_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="5dip"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@mipmap/home"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="首页"
+                    android:textColor="#7597B3"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/tabbar_dig"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="5dip"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@mipmap/star"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="我的订单"
+                    android:textColor="#7597B3"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/tabbar_my"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="5dip"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@mipmap/user_p"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="个人中心"
+                    android:textColor="#7597B3"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+
